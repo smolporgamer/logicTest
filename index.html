@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="rockpaperscissor_container">
+        <div id="player1Container">
+            <p id="p1-el"></p>
+            <button id="rock-el" onclick="rockMove()"></button>
+            <button id="paper-el" onclick="paperMove()"></button>
+            <button id="scissor-el" onclick="scissorMove()"></button>
+        </div>
+
+        <div id="player2Container">
+            <p id="p2-el"></p>
+            <button id="rock-el" onclick="rockMove()"></button>
+            <button id="paper-el" onclick="paperMove()"></button>
+            <button id="scissor-el" onclick="scissorMove()"></button>
+        </div>
+    </div>
+    <button id="start-btn">Start</button>
+    <button id="reset-btn">Reset</button>
+    <button id="fizzbuzz-btn" onclick="fizzBuzz()">fizzbuzz</button>
+    <button id="palindrome-btn" onclick="palindromeChecker()">palindrome</button>
+
+    <div id="passgen_container">
+        <h2>password generator</h2>
+        <div id="checkbox-div">
+            <h4>Include: </h4>
+            <input type="number" id="input-el" min="8" placeholder="8" required>
+            <input type="checkbox" class="restricts" id="restrictions-el-one" value="Uppercase"> Uppercase
+            <input type="checkbox" class="restricts" id="restrictions-el-two" value="Lowercase"> Lowercase
+            <input type="checkbox" class="restricts" id="restrictions-el-three" value="Numbers"> Numbers
+            <input type="checkbox" class="restricts" id="restrictions-el-four" value="Specials"> Special Characters
+        </div>
+        <button id="generate-btn" onclick="generate()">Generate</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

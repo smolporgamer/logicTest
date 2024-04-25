@@ -1,0 +1,82 @@
+/* Apply general styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#rockpaperscissor_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#player1Container,
+#player2Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#start-btn,
+#reset-btn,
+#fizzbuzz-btn,
+#palindrome-btn,
+#generate-btn {
+    display: block;
+    margin: 10px auto;
+}
+
+#passgen_container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#checkbox-div {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Separate styles for the rock, paper, and scissor buttons */
+#rock-el,
+#paper-el,
+#scissor-el {
+    width: 100px;
+    height: 40px;
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    #rockpaperscissor_container {
+        flex-direction: column;
+    }
+
+    #player1Container,
+    #player2Container {
+        margin: 10px 0;
+    }
+}
